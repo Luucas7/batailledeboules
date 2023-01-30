@@ -6,9 +6,7 @@ chaque joueur joue en cliquant sur la fenêtre pour poser une boule ou pour inte
 les joueurs contrôlent la souris chacun à leur tour.
 
 
-
-
-----------------------------------SEXPLICATIONS TECHNIQUES----------------------------------S
+----------------------------------EXPLICATIONS TECHNIQUES----------------------------------
 
 
 ------------------------STRUCTURE DU TOUR A TOUR
