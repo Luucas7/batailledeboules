@@ -6,7 +6,7 @@ C'est un jeu où le but est d'occuper la plus grande aire possible en plaçant d
 
 
 
-------------------------------------------------EXPLICATIONS TECHNIQUES------------------------------------------------
+----------------------------------SEXPLICATIONS TECHNIQUES----------------------------------S
 
 
 ------------------------STRUCTURE DU TOUR A TOUR
