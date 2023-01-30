@@ -1,6 +1,13 @@
 MERLIN Lucas et DOLANT Nathan 
 Projet Python : Bataille de boules
 
+C'est un jeu où le but est d'occuper la plus grande aire possible en plaçant des boules, chaque joueur joue en cliquant sur la fenêtre pour poser une boule ou pour interagir avec les variantes proposées, les joueurs contrôlent la souris chacun à leur tour.
+
+
+
+
+------------------------------------------------EXPLICATIONS TECHNIQUES------------------------------------------------
+
 
 ------------------------STRUCTURE DU TOUR A TOUR
 La structure de ce programme se repose sur un système de jeu tour à tour, pour cela, le programme utilise la parité 
@@ -22,7 +29,6 @@ EXEMPLE (VERT) : Le joueur vert clique dans un cercle rouge, donc le programme d
 cercles[not numTour % 2] = cercles[1] permet bien d'accéder aux cercles rouges,
 L'opérateur not, qui inverse la valeur booléene, permet d'accéder aux cercles ennemis.
 Si on a besoin de tracer un cercle vert en étant vert : cercles[numTour % 2] = cercles[0]
-
 --
 
 ------------------------GESTION DES INTERACTIONS AU CLIC
@@ -57,11 +63,16 @@ des modes de jeu qui sont donc toutes des variables booléennes
 
 ------------------------VARIANTES
 -Sablier : On demande à l'utilisateur de cliquer pendant un certain nombre de secondes, si il ne clique pas le tour est passé.
+
 -Scores : Affiche l'aire totale des cercles des joueurs pendant 2 secondes en appuyant sur la touche S, disponible qu'une seule fois par tour.
--Taille de boules (Economie) : Les deux joueurs commencent avec une certaine somme et ils doivent entrer la valeur du rayon avant de cliquer,
+
+-Économie (ou Taille de Boules) : Les deux joueurs commencent avec une certaine somme et ils doivent entrer la valeur du rayon avant de cliquer,
 une valeur initiale du rayon est prévue au cas ou le joueur ne rentre pas de valeur. Un joueur peut diviser les boules adverses avec une épargne vide.
+
 -Version dynamique : A chaque fin de tour, chaque cercle s'incrémente si possible.
+
 -Terminaison : Disponible qu'une seule fois par partie, permet de rajouter 5 rounds.
+
 -Obstacles : Des cercles sont générés aléatoirement sur le terrain, les cercles ne peuvent pas s'intersecter avec ces obstacles, on peut aussi
 charger un nombre d'obstacles aléatoires et des obstacles chargés via le fichier passé en argument dans la ligne de commande,
 qui est par défaut obstacles.txt 
