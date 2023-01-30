@@ -1,0 +1,9 @@
+#Paramètres du jeu 
+
+largeurFenetre=1440
+hauteurFenetre=810
+rayon=40
+epargneVert=400
+epargneRouge=400
+nombreDeRounds=10
+tempsSablier=20
