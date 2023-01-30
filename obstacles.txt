@@ -3,3 +3,4 @@
 
 # OBSTACLES A CHARGER
 # x; y; rayon 
+# 700; 400; 25
