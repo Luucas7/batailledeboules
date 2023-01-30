@@ -1,7 +1,9 @@
 MERLIN Lucas et DOLANT Nathan 
 Projet Python : Bataille de boules
 
-C'est un jeu où le but est d'occuper la plus grande aire possible en plaçant des boules, chaque joueur joue en cliquant sur la fenêtre pour poser une boule ou pour interagir avec les variantes proposées, les joueurs contrôlent la souris chacun à leur tour.
+C'est un jeu où le but est d'occuper la plus grande aire possible en plaçant des boules,
+chaque joueur joue en cliquant sur la fenêtre pour poser une boule ou pour interagir avec les variantes proposées,
+les joueurs contrôlent la souris chacun à leur tour.
 
 
 
