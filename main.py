@@ -50,6 +50,7 @@ def affichage_gagnant_partie(gagnant):
     mise_a_jour()
     sleep(0.5)
     efface('suspens')
+    
 
     if gagnant == 'vert':
         texte(l/2,h/2,'Le joueur Vert','#64C850',taille=3*taille,ancrage='center')
@@ -57,6 +58,8 @@ def affichage_gagnant_partie(gagnant):
         texte(l/2,h/2,'Le joueur Rouge','#C92519',taille=3*taille,ancrage='center')
     else:
         texte(l/2,h/2,'Egalité','white',taille=3*taille,ancrage='center')
+    mise_a_jour()
+    sleep(3)
 
 def affichage_aire(aires):
     efface('score')
