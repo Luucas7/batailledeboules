@@ -59,7 +59,8 @@ def affichage_gagnant_partie(gagnant):
     else:
         texte(l/2,h/2,'Egalité','white',taille=2*taille,ancrage='center')
     mise_a_jour()
-    sleep(3)
+    sleep(0.5)
+    attente_clic()
 
 def affichage_aire(aires):
     efface('score')
