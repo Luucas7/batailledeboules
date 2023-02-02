@@ -53,11 +53,11 @@ def affichage_gagnant_partie(gagnant):
     
 
     if gagnant == 'vert':
-        texte(l/2,h/2,'Le joueur Vert','#64C850',taille=3*taille,ancrage='center')
+        texte(l/2,h/2,'Le joueur Vert','#64C850',taille=2*taille,ancrage='center')
     elif gagnant == 'rouge':
-        texte(l/2,h/2,'Le joueur Rouge','#C92519',taille=3*taille,ancrage='center')
+        texte(l/2,h/2,'Le joueur Rouge','#C92519',taille=2*taille,ancrage='center')
     else:
-        texte(l/2,h/2,'Egalité','white',taille=3*taille,ancrage='center')
+        texte(l/2,h/2,'Egalité','white',taille=2*taille,ancrage='center')
     mise_a_jour()
     sleep(3)
 
