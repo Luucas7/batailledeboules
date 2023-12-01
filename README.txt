@@ -6,10 +6,8 @@ chaque joueur joue en cliquant sur la fenêtre pour poser une boule ou pour inte
 les joueurs contrôlent la souris chacun à leur tour.
 
 
-----------------------------------EXPLICATIONS TECHNIQUES----------------------------------
 
-
-------------------------STRUCTURE DU TOUR A TOUR
+# STRUCTURE DU TOUR A TOUR
 La structure de ce programme se repose sur un système de jeu tour à tour, pour cela, le programme utilise la parité 
 d'un itérateur numTour dans une boucle "while" pour attribuer le joueur du tour, ce qui permet une alternance peu importe les valeurs,
 le joueur vert joue quand numTour est pair, le joueur rouge joue quand numTour est impair.
@@ -17,7 +15,7 @@ La boucle est initiée à 0, donc le joueur vert commence, et va jusqu'à (nombr
 la parité de numTour lui correspond, on a besoin d'un total de (nombre de tours * 2) tours pour que chaque joueur joue (nombre de tours) fois
 vu qu'il n'y a que 2 joueurs.
 
-------------------------GESTION DES CERCLES
+# GESTION DES CERCLES
 Les données des cercles (x centre , y centre , rayon , identifiant du cercle) sont stockés dans une liste qui comporte séparement
 les cercles verts et les rouges dans 2 listes : [ [cercles verts], [cercles rouges] ].
 Pour ajouter un cercle il suffit d'utiliser la méthode .append() avec les données du cercle dès qu'un cercle est tracé.
@@ -31,7 +29,7 @@ L'opérateur not, qui inverse la valeur booléene, permet d'accéder aux cercles
 Si on a besoin de tracer un cercle vert en étant vert : cercles[numTour % 2] = cercles[0]
 --
 
-------------------------GESTION DES INTERACTIONS AU CLIC
+# GESTION DES INTERACTIONS AU CLIC
 Pour les interactions avec les autres cercles, le programme parcourt la liste des cercles ennemis, puis calcule la distance 
 euclidienne entre le clic du joueur et le centre de chaque cercle. 
 Ensuite, il enregistre la distance minimale trouvée, et l'interaction est choisie en fonction de la distance
@@ -41,14 +39,14 @@ doit être tracé, sinon si il n'y a aucune interaction, le cercle est tracé.
 Si le cercle est trop près des bords ou d'un cercle ennemi, le cercle n'est pas dessiné et le tour du joueur est passé.
 
 
-------------------------GESTION DU CHOIX DU GAGNANT
+# GESTION DU CHOIX DU GAGNANT
 Quand un joueur demande d'afficher l'aire via la variante Scores ou que la partie se termine, on parcourt chaque cercle et on prend
 chaque point qui se trouve dans un cercle dans un ensemble pour chaque joueur, comme les ensembles ne peuvent pas avoir de doublons,
 les pixels qui se retrouvent dans plusieurs cercles ne sont comptés qu'une seule fois, 
 la longueur de ces deux ensembles correspond aux aires totales de chaque joueur.
 
 
-------------------------GESTION DU MENU
+# GESTION DU MENU
 Pour le menu initial, à gauche se trouvent les zones qui correspondent aux modes de jeu, qu'on peut activer et désactiver en cliquant
 sur ces zones, une zone est verte quand le mode de jeu est actif, sinon il est rouge. Pour lancer le jeu, il suffit d'appuyer sur la
 zone verte qui se situe en bas à droite, tout objet du menu est supprimé et le jeu commence.
@@ -61,7 +59,7 @@ des modes de jeu qui sont donc toutes des variables booléennes
 --
 
 
-------------------------VARIANTES
+# VARIANTES
 -Sablier : On demande à l'utilisateur de cliquer pendant un certain nombre de secondes, si il ne clique pas le tour est passé.
 
 -Scores : Affiche l'aire totale des cercles des joueurs pendant 2 secondes en appuyant sur la touche S, disponible qu'une seule fois par tour.
