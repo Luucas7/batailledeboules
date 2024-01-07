@@ -1,3 +1,4 @@
+# Bataille de boules
 Bataille de boules est un jeu où le but est d'occuper la plus grande aire possible en plaçant des boules,
 chaque joueur joue en cliquant sur la fenêtre pour poser une boule ou pour interagir avec les variantes proposées,
 les joueurs contrôlent la souris chacun à leur tour.
@@ -62,12 +63,12 @@ Tout en haut de la fenêtre se trouve l'entête de la page, avec le titre, un pe
 
 
 # Variantes
--Sablier : On demande à l'utilisateur de cliquer pendant un certain nombre de secondes, si il ne clique pas le tour est passé.
--Scores : Affiche l'aire totale des cercles des joueurs pendant 2 secondes en appuyant sur la touche S, disponible qu'une seule fois par tour.
--Économie (ou Taille de Boules) : Les deux joueurs commencent avec une certaine somme et ils doivent entrer la valeur du rayon avant de cliquer,
-une valeur initiale du rayon est prévue au cas ou le joueur ne rentre pas de valeur. Un joueur peut diviser les boules adverses avec une épargne vide.
--Version dynamique : A chaque fin de tour, chaque cercle s'incrémente si possible.
--Terminaison : Disponible qu'une seule fois par partie, permet de rajouter 5 rounds.
--Obstacles : Des cercles sont générés aléatoirement sur le terrain, les cercles ne peuvent pas s'intersecter avec ces obstacles, on peut aussi
-charger un nombre d'obstacles aléatoires et des obstacles chargés via le fichier passé en argument dans la ligne de commande,
-qui est par défaut obstacles.txt 
+    -Sablier : On demande à l'utilisateur de cliquer pendant un certain nombre de secondes, si il ne clique pas le tour est passé.
+    -Scores : Affiche l'aire totale des cercles des joueurs pendant 2 secondes en appuyant sur la touche S, disponible qu'une seule fois par tour.
+    -Économie (ou Taille de Boules) : Les deux joueurs commencent avec une certaine somme et ils doivent entrer la valeur du rayon avant de cliquer,
+    une valeur initiale du rayon est prévue au cas ou le joueur ne rentre pas de valeur. Un joueur peut diviser les boules adverses avec une épargne vide.
+    -Version dynamique : A chaque fin de tour, chaque cercle s'incrémente si possible.
+    -Terminaison : Disponible qu'une seule fois par partie, permet de rajouter 5 rounds.
+    -Obstacles : Des cercles sont générés aléatoirement sur le terrain, les cercles ne peuvent pas s'intersecter avec ces obstacles, on peut aussi
+    charger un nombre d'obstacles aléatoires et des obstacles chargés via le fichier passé en argument dans la ligne de commande,
+    qui est par défaut obstacles.txt 
